@@ -1,0 +1,4 @@
+# run with: --spring.profiles.active=mysql  (create database `eeo` first)
+spring:
+  datasource: {url: "jdbc:mysql://localhost:3306/eeo", username: root, password: root}
+  jpa: {hibernate: {ddl-auto: update}}

@@ -1,0 +1,17 @@
+# Example campus. Edit it and press Apply in the app.
+# building NAME / floor NAME start a new group. One line per room:
+#   room NAME: type, N seats, N W (or kW), ap ACCESS-POINT-NAME, at (column,row)
+# Rooms without "at" are placed automatically. Room names must be unique.
+building Main Block
+floor Ground
+room Lecture Hall A: classroom, 120 seats, 3200 W, ap AP-LH-A, at (0,0)
+room Room 101: classroom, 60 seats, 1500 W, ap AP-101, at (1,0)
+room Room 102: classroom, 60 seats, 1500 W, ap AP-102, at (2,0)
+room Physics Lab: lab, 40 seats, 2400 W, ap AP-PHY, at (3,0)
+room Computer Lab: lab, 50 seats, 3000 W, ap AP-CS, at (0,2)
+room Seminar Room: classroom, 30 seats, 900 W, ap AP-SEM, at (1,2)
+room Admin Office: office, 15 seats, 600 W, ap AP-ADM, at (3,2)
+floor First
+room Room 201: classroom, 60 seats, 1500 W, ap AP-201, at (0,0)
+room Room 202: classroom, 60 seats, 1500 W, ap AP-202, at (1,0)
+room Staff Room: office, 20 seats, 700 W, ap AP-STF, at (3,0)

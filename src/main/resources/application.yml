@@ -1,0 +1,11 @@
+server: {port: "${PORT:8080}"}
+spring:
+  datasource: {url: "jdbc:h2:file:./data/eeo", username: sa, password: "", hikari: {minimum-idle: 0, max-lifetime: 240000}}   # saved on disk in backend/data
+  jpa: {hibernate: {ddl-auto: update}}
+app:
+  cors-origins: http://localhost:5173        # your frontend address(es), comma separated
+  device-key: dev-device-key-change-me       # secret used by Wi-Fi collector and sensors. CHANGE IT.
+  jwt-secret: change-this-secret-to-at-least-32-characters-long
+  simulator: true                            # demo mode: example campus + fake live readings. Set false for real use.
+  assume-on-when-booked: true                # Wi-Fi-only mode: assume room equipment runs during booked classes
+  wifi: {devices-per-person: 1.3, baseline-devices: 0, stale-seconds: 120}
